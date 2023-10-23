@@ -1,0 +1,25 @@
+dev:
+  outputs:
+    stage:
+      dataset: stage
+      job_execution_timeout_seconds: 600
+      job_retries: 1
+      keyfile: C:\Users\abdufadh\OneDrive - Nelly NLY AB\Skrivbordet\Data Engineer - Consulting program\Challenges\Challenge 4 -  DBT\dbt-gcp-data-engineer\dbt\dbt_tasks\dbt_config\dev_key.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: elegant-device-332415
+      threads: 10
+      type: bigquery
+    data_model:
+      dataset: data_model
+      job_execution_timeout_seconds: 600
+      job_retries: 1
+      keyfile: dev_key.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: elegant-device-332415
+      threads: 10
+      type: bigquery
+  target:  stage
