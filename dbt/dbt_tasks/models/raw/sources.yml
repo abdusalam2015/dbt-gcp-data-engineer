@@ -1,0 +1,15 @@
+# models/sources.yml
+version: 2
+sources:
+  - name: blocks
+    database: "{{ target.project }}"
+    schema: curated
+    tables:
+      - name: bitcoin
+        identifier: crypto_bitcoin_blocks
+  - name: transactions
+    database: "{{ target.project }}"
+    schema: curated
+    tables:
+      - name: bitcoin
+        identifier: crypto_bitcoin_transactions
